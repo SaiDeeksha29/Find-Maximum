@@ -11,15 +11,13 @@ import java.util.Scanner;
  */
 public class UserMaximum {
 
-	public static Scanner sc=new Scanner(System.in);
+	public static Scanner sc = new Scanner(System.in);
+
 	/**
 	 * @param args
 	 */
-	public static Float findMaximum(float a, float b, float c) {
-		float max=0;
-		Float x=a;
-		Float y=b;
-		Float z=c;
+	public static String findMaximum(String x, String y, String z) {
+		String max=x;
 		if(x.compareTo(y)>0 && x.compareTo(z)>0) {
 			max=x;
 			System.out.println(x+" is the maximum number");
@@ -37,10 +35,11 @@ public class UserMaximum {
 		// TODO Auto-generated method stub
         System.out.println("Welcome to Test maximum Code");
         
-        System.out.println("Enter three variables");
-        float a=sc.nextFloat();
-        float b=sc.nextFloat();
-        float c=sc.nextFloat();
-        System.out.println("Maximum number is "+findMaximum(a,b,c));
+        System.out.println("Enter three Strings");
+        String a=sc.next();
+        String b=sc.next();
+        String c=sc.next();
+        System.out.println("Maximum string is "+findMaximum(a,b,c));
 	}
 }
+
