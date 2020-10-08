@@ -15,8 +15,11 @@ public class UserMaximum {
 	/**
 	 * @param args
 	 */
-	public static Integer findMaximum(Integer x, Integer y, Integer z) {
-		int max=0;
+	public static Float findMaximum(float a, float b, float c) {
+		float max=0;
+		Float x=a;
+		Float y=b;
+		Float z=c;
 		if(x.compareTo(y)>0 && x.compareTo(z)>0) {
 			max=x;
 			System.out.println(x+" is the maximum number");
@@ -35,9 +38,9 @@ public class UserMaximum {
         System.out.println("Welcome to Test maximum Code");
         
         System.out.println("Enter three variables");
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        int c=sc.nextInt();
+        float a=sc.nextFloat();
+        float b=sc.nextFloat();
+        float c=sc.nextFloat();
         System.out.println("Maximum number is "+findMaximum(a,b,c));
 	}
 }
