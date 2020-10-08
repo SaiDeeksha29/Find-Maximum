@@ -34,6 +34,10 @@ public class UserMaximum <E extends Comparable<E>> {
 		return max;
 	}
 
+	public void toPrintMaximum() {
+		System.out.println(max);
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Welcome to Test maximum Code");
